@@ -155,7 +155,7 @@ while run:
                     endPoint[0] == mouseX and endPoint[1] == mouseY):
                 points[mouseX][mouseY].set_obstacle()
         # delete obstacle
-        if mouseButtons[2] and not points[mouseX][mouseY].isObstacle:
+        if mouseButtons[2] and points[mouseX][mouseY].isObstacle:
             points[mouseX][mouseY].reset_obstacle()
 
     # Run the algorithm
